@@ -51,9 +51,14 @@ function Todo() {
 
   const handleFilterChange = value => setFilter(value);
   return (
-    <div className="panel">
+    <div article class="panel">
       <div className="panel-heading">
-        ITSS ToDoアプリ
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-calendar-check"></i>
+          </span>
+          <span> ITSS Todoアプリ</span>
+        </span>
       </div>
       <Input onAdd={handleAdd} />
       <Filter
@@ -78,5 +83,3 @@ function Todo() {
     </div>
   );
 }
-
-export default Todo;
